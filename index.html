@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>RAIHAN</title>
+        <link rel="icon" type="image/png" href="img/r1.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+        <style>
+            body {
+                padding-top: 56px; /* Adjusted for fixed navbar */
+            }
+
+            .navbar {
+                background-color: rgb(100, 25, 31);
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: #fff;
+            }
+
+            .hero-section {
+                position: relative;
+                height: 400px; /* Adjust the height as needed */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgb(100, 25, 31);
+                color: #f8f3f3;
+                text-align: left;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .hero-text {
+                width: 50%;
+                max-width: 600px; /* Adjust the maximum width of the text */
+                margin-bottom: 10px; /* Added margin to separate text from the image on smaller screens */
+                padding: 10px; /* Add padding to the text */
+                margin: 70px;
+            }
+
+            .hero-text h1 {
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                white-space: nowrap; /* Keeps the content on a single line */
+                margin: 0; /* Gives that scrolling effect as the typing happens */
+                text-align: justify; /* Justify the text */
+                text-align-last: justify; /* Justify the last line as well */
+                animation: typing 3.5s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+            }
+
+            .hero-image {
+                width: 100%;
+                max-width: 400px; /* Set the maximum width to 400px */
+                height: auto;
+                border: 5px solid #fff;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 10px; /* Add padding to the image */
+                margin: 90px;
+                box-shadow: 0 20px 20px rgba(17, 16, 16, 0.815); /* Add box shadow */
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            @media (max-width: 576px) {
+                .hero-section {
+                    flex-direction: column-reverse; /* Reverse the order for smaller screens */
+                    height: auto;
+                }
+
+                .hero-text,
+                .hero-image {
+                    width: 100%;
+                }
+
+                .hero-text {
+                    text-align: center;
+                }
+            }
+
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 39%;
+                }
+            }
+
+            @keyframes blink-caret {
+                from,
+                to {
+                    border-color: transparent;
+                }
+                40.1% {
+                    border-color: #fff;
+                }
+            }
+
+            .card {
+                width: 290px;
+                height: 360px;
+                border-radius: 20px;
+                padding: 5px;
+                box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+                margin-left: 15px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+            .card1 {
+                width: 290px;
+                height: 150px;
+                border-radius: 20px;
+                padding: 5px;
+                box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+                background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+                margin-left: 15px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            .card__content {
+                background: rgb(5, 6, 45);
+                border-radius: 17px;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edu">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid hero-section" >
+            <div class="hero-text">
+                <h1>
+                    Hi.. <br />
+                    I Am Raihan
+                </h1>
+                <p>Some introductory text about yourself or your website.</p>
+            </div>
+            <div class="hero-image" style="">
+                <img src="img/r1.png" alt="Your Image" />
+            </div>
+        </div>
+
+        <div class="container-fluid" id="About" style="background-color: rgba(104, 47, 52, 0.829)">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card__content">
+                            <img src="img/raihan about.png" alt="" style="width: 280px;
+                            height: 349px;
+                            border-radius: 20px;
+                            padding: 5px; " />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card__content">
+                          <div class="text-white">  <i class="">
+                            <p>
+                              <strong>Personal Information:</strong> Raihan,Male <br /> <br>
+            
+                              <strong>Objective:</strong>seeking a position as a Scientists <br> <br>
+            
+                              <strong>Education:</strong>6th standerd,Najumul huda hirher
+                              secondary school. <br /> <br>
+            
+                             
+            
+                              <strong>Achievements:</strong>cooking,Feeding a Fish ,Farming
+                              <br /> <br>
+            
+                              <strong>Interests:</strong>Drawing,Coloring,Make a Paper Craft  <br /></p
+                          ></i>
+            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-top: 50px;">
+                    <div class="card1" style="margin-top: 50px">
+                        <div class="card__content"> <div style="margin-left: 20%;">
+                          <h3 class="text-light" style="margin-left: 40px;">Sosiol</h3>
+                          <a href=""
+                            > <i
+                              class="fa-brands fa-youtube"
+                              style="font-size: 2rem; color: rgba(248, 61, 61, 0.877) ;margin-top: 20px;"
+                            ></i
+                          ></a>
+                          <a href=""
+                            ><i
+                              class="fa-brands fa-facebook"
+                              style="font-size: 2rem; color: #3b5998; margin-left: 10px"
+                            ></i
+                          ></a>
+                          <a href="https://github.com/AFLAHAFI"
+                            ><i
+                              class="fa-brands fa-instagram"
+                              style="
+                                font-size: 2rem;
+                                color: rgba(248, 0, 165, 0.877);
+                                margin-left: 15px;
+                              "
+                            ></i
+                          >
+                          <i
+                          class="fa-brands fa-whatsapp"
+                          style="
+                            font-size: 2rem;
+                            color: rgba(29, 248, 0, 0.877);
+                            margin-left: 15px;
+                          "
+                        ></i
+                      ></a>
+                        </div></div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="edu" style="background-color: rgba(148, 66, 73, 0.747)">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card1" style="margin-top: 50px">
+                        <div class="card__content"><img src="img/hudamain.png" alt=""  style="width: 280px;
+                          height: 139px;
+                          border-radius: 20px;
+                          padding: 5px; " /></div>
+                    </div>
+                    <div class="card1">
+                        <div class="card__content"><img src="img/huda2.png" alt="" style="width: 280px;
+                          height: 139px;
+                          border-radius: 20px;
+                          padding: 5px; "/>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card__content">    <h2 class="text-white">NANUMUL HUDA</h2>
+                          <p class="text-white">
+                            Prinsipal-Muhammed shafi <br /> <br>
+                            lKG to +2 <br /> <br>
+                            Village-Kottakal <br /> <br>
+                            Municipality-Kottakal <br /> <br>
+                            Thaluk-Tirur <br />
+                            District-Malapuram
+                           
+                          </p>
+                          <a href="https://www.facebook.com/NajmulHudaHSSKavathikalam/"><i
+                            class="fa-brands fa-facebook"
+                            style="font-size: 2rem; color: #3b5998; margin-left: 80px"
+                          ></i></a>
+                          <a href="https://www.youtube.com/@asnakadambot6826/featured"><i
+                            class="fa-brands fa-youtube"
+                            style="font-size: 2rem; color: rgba(248, 61, 61, 0.877) ;"
+                          ></i
+                        ></a>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card__content">
+                          <h3 class="text-white" style="margin-left: 30px;">About Web Site</h3>
+                          <p class="text-white">  The Creator Of a website:- <br>
+                            My Name Is a Aflah <br>
+                          I Am Studying 6th Class <br>
+                        Shcool Name Is Namul NajmulHuda HSS Kavathikalam <br> <br>
+                      If You Want a Personal website  <br>
+                    You Chat Wiht This email - <br>
+                    aflahmanningal.afigmail.com
+                  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Add Bootstrap and jQuery scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

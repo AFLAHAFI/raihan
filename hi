@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <style>
+            body {
+                padding-top: 56px; /* Adjusted for fixed navbar */
+            }
+
+            .navbar {
+                background-color: #343a40;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: #fff;
+            }
+
+            .hero-section {
+                position: relative;
+                height: 400px; /* Adjust the height as needed */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: url("img/about.webp") center/cover no-repeat; /* Replace 'your-background-image.jpg' with the path to your background image */
+                color: #fff;
+                text-align: left;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .hero-text {
+                width: 50%;
+                
+            }
+
+            .hero-image {
+                width: 500px; /* Adjust to your desired width */
+                height: auto;
+                border: 5px solid #fff;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 50%;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+              
+            }
+
+            @media (max-width: 415px) {
+                .hero-section {
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                .hero-text,
+                .hero-image {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .hero-image {
+                    order: -1; /* Move the image to the top */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container-fluid hero-section">
+            <div class="hero-text">
+                <h1>Your Name</h1>
+                <p>Some introductory text about yourself or your website.</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/r1.png" alt="Your Image" />
+            </div>
+        </div>
+
+        <!-- Optional: Add Bootstrap and jQuery scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <style>
+            body {
+                padding-top: 56px; /* Adjusted for fixed navbar */
+            }
+
+            .navbar {
+                background-color: #343a40;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: #fff;
+            }
+
+            .hero-section {
+                position: relative;
+                height: 400px; /* Adjust the height as needed */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: url("img/about.webp") center/cover no-repeat; /* Replace 'your-background-image.jpg' with the path to your background image */
+                color: #fff;
+                text-align: left;
+                padding: 20px;
+                overflow: hidden;
+            }
+
+            .hero-text {
+                width: 50%;
+                
+            }
+
+            .hero-image {
+                width: 500px; /* Adjust to your desired width */
+                height: auto;
+                border: 5px solid #fff;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 50%;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+              
+            }
+
+          
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container-fluid hero-section">
+          <div class="row">
+            <div class="hero-text col-md-6">
+                <h1>Your Name</h1>
+                <p>Some introductory text about yourself or your website.</p>
+            </div>
+            <div class="hero-image col-md-6">
+                <img src="img/r1.png" alt="Your Image" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional: Add Bootstrap and jQuery scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
